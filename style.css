@@ -1,0 +1,83 @@
+*,::before,::after{
+
+    box-sizing: border-box; /* utilisé pour le responsive*/
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+
+    font-size: 62,5%; /* 1rem = 10px utilisé pour le responsive*/
+
+}
+
+body{
+
+    background-color: blue;
+
+}
+
+
+
+@media screen and (max-width: 410px) {
+    body {
+     background-color: red;
+     font-size: 5px;
+
+    }
+
+}
+
+@media screen and (min-width: 410px) and (max-width: 768px) {
+    body {
+
+        background-color: green;
+        font-size: 62%;
+        
+
+    }
+    #small {
+
+    
+        width: 66%;
+        float: left;
+        display: block;
+
+    }
+
+    #medium {
+
+        width: 33%;
+        display: block;
+        float: right;
+        
+
+    }
+
+    #large {
+
+        display: inline-block;
+        width: 100%;
+
+    }
+}
+
+@media screen and (min-width: 768px) { /* obligation de créer deux parenthèses lorsque l'on a plusieurs conditions*/
+    body {
+
+        background-color: blue;
+        font-size: 10px;
+        display: flex;
+        margin: 5px;
+
+    }
+
+}
+
+
+
+
+
+
+
